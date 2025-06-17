@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VibeConnect - Fitness Community</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -26,6 +27,8 @@
     img.logo {
       width: 160px;
       margin-bottom: 1rem;
+      border-radius: 50%;
+      border: 3px solid #2196f3;
     }
     h1 {
       font-size: 2.5rem;
@@ -42,12 +45,22 @@
       gap: 1rem;
       width: 100%;
       max-width: 400px;
+      background: #142b43;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(33, 150, 243, 0.5);
     }
-    input[type="email"] {
+    input[type="email"],
+    textarea {
       padding: 0.8rem;
       border: none;
       border-radius: 8px;
       font-size: 1rem;
+      resize: vertical;
+    }
+    textarea {
+      min-height: 100px;
+      max-height: 200px;
     }
     button {
       padding: 0.8rem;
@@ -57,6 +70,10 @@
       border-radius: 8px;
       font-size: 1rem;
       cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #0b78d1;
     }
     .socials {
       display: flex;
@@ -80,27 +97,28 @@
   </style>
 </head>
 <body>
-  <img src="https://vibeconnectapp.com/logo.png" alt="VibeConnect Logo" class="logo">
+  <img src="Profilovka_VibeConnect.png" alt="Profilovka" class="logo" />
   <h1>VibeConnect</h1>
   <p class="highlight">One day or day one. You decide.</p>
 
-  <form action="https://formspree.io/f/mqkrgwny" method="POST">
+  <form action="https://formspree.io/f/mvgrqzbp" method="POST">
     <input type="email" name="email" placeholder="Zadajte váš email" required />
+    <textarea name="message" placeholder="Napíš nám správu (voliteľné)"></textarea>
     <button type="submit">Pridať sa na waitlist</button>
   </form>
 
   <div class="socials">
     <a href="https://www.instagram.com/vibeconnect.app" target="_blank" title="Instagram">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
     </a>
-    <a href="https://www.youtube.com/@vibeconnect.app" target="_blank" title="YouTube">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+    <a href="https://www.youtube.com/@VibeConnectApp" target="_blank" title="YouTube">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
     </a>
-    <a href="https://www.facebook.com/vibeconnect.app" target="_blank" title="Facebook">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook">
+    <a href="https://www.facebook.com/profile.php?id=61577116213086" target="_blank" title="Facebook">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook" />
     </a>
-    <a href="https://www.tiktok.com/@vibeconnect.app" target="_blank" title="TikTok">
-      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+    <a href="https://www.tiktok.com/@vibeconnectapp" target="_blank" title="TikTok">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" />
     </a>
   </div>
 </body>
